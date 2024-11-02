@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7616240279:AAEvAzlR7u3pBjYClKtdX1KiOy9bPNpUSOc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7616240279:AAEDEP7pRu83CX6GpuCWlgcPHcrUnXt2EVk")
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "23023343"))
 #Your API Hash from my.telegram.org
@@ -27,8 +27,8 @@ PORT = os.environ.get("PORT", "8030")
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://interworld:itzmecp@cluster0.jfui5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", ""))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002019743337"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002019743337"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -36,7 +36,7 @@ START_PIC = os.environ.get("START_PIC", "https://i.ibb.co/M7X19Qr/file-949.jpg")
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://i.ibb.co/M7X19Qr/file-949.jpg")
 
 HELP_TXT = "<b>This is a file to link bot work for @Itzmecp \n\n❏ Bot Commands\n├ /start : Start the bot\n├├ /about : Our Information\n /help : Help related to bot\n\n Simply click on the link and start the bot. Join both channels and try again, that’s it!\n\n Developed by <a href=https://t.me/itzmecp>itzmecp</a></b>"
-ABOUT_TXT = "<b>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/Itzmecp>Itzmecp</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/otakuflix_network>I n t e r W o r l d</a></b>"
+ABOUT_TXT = "<b>◈ ᴄʀᴇᴀᴛᴏʀ: <a href=https://t.me/Itzmecp>Itzmecp</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/InterWorldMX>I n t e r W o r l d</a></b>"
 START_MSG = os.environ.get("START_MESSAGE", "<b>Kon'nichiwa ! {first}\n\n I am File Store Bot. I can store private files in a specified channel, and other users can access it from a special link.</b>")
 try:
     ADMINS=[6376328008]
@@ -45,7 +45,7 @@ try:
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
-#Force sub message 
+#Force sub message a
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʀᴇʟᴏᴀᴅ button ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛᴇᴅ ꜰɪʟᴇ.</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
